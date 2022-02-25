@@ -1,0 +1,33 @@
+<body>
+    <h1 class="head">Records Entry Detail</h1>
+    <div class="tdata">
+        <table border="1">
+            <tr>
+                <th>First number</th>
+                <th>Second number</th>
+                <th>Result</th>
+                <th>Operator</th>
+                <th>Time</th>
+            </tr>
+            <% item.forEach(function(data){%>
+                <tr>
+                    <td>
+                        <%- data.myinput%>
+                    </td>
+                    <td>
+                        <%- data.myinput1%>
+                    </td>
+                    <td>
+                        <%- data.result%>
+                    </td>
+                    <td>
+                        <%- data.btn%>
+                    </td>
+                    <td>
+                        <%- data.time%>
+                    </td>
+                </tr>
+                <% }); %>
+        </table>
+    </div>
+</body>
